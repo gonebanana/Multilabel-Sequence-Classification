@@ -6,7 +6,7 @@ Provided notebook contains an interface for training (`class MultilabelTrainer`)
 [Open Colab](https://colab.research.google.com/drive/1MTZfRvWgJTtqoUoSWaCHh5LPE08_DY3w?usp=sharing)
 
 ### 2. Create Docker Container
-Following command allows to create a container for deploying the finetuned model. In the Sentiment Classification Task provided model aims to predict scores for each emotion from the pre-defined set of classification labels.
+Following command allows to create a container for deploying the finetuned model. In the Sentiment Classification Task provided model aims to predict scores for each emotion from the pre-defined set of classification labels. To perform conteinerization finetuned model `bert-finetuned-sem_eval-english-0.1.0` should be located in the `app` directory. 
 
 ```bash
 docker build -t sentiment-classifier-app .
